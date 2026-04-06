@@ -1981,7 +1981,7 @@ struct PlayerPool final : public IPlayerPool, public NetworkEventHandler, public
 			};
 			for (size_t i = 0; i < sizeof(singleCharacter); ++i)
 			{
-				if (name_temp.find(singleCharacter[i]) !- std::string::npos)
+				if (name_temp.find(singleCharacter[i]) != std::string::npos)
 				{
 					if (!allowNickCharacter[static_cast<uint8_t>(singleCharacter[i])])
 					{
